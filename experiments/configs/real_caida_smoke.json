@@ -1,0 +1,48 @@
+{
+  "name": "caida_smoke_run",
+  "source_path": "data/raw/caida_destination_ip_template.tsv",
+  "final_f1": 2,
+  "alpha": 2,
+  "mode": "non-interleaved",
+  "seed": 20260419,
+  "destination_column": "destination_ip",
+  "destination_index": null,
+  "delimiter": "\t",
+  "has_header": true,
+  "heavy_k": 2,
+  "sample_k": 2,
+  "algorithms": [
+    {
+      "name": "double_mg",
+      "params": {
+        "capacity": 4
+      }
+    },
+    {
+      "name": "double_ss",
+      "params": {
+        "capacity": 4
+      }
+    },
+    {
+      "name": "count_min",
+      "params": {
+        "width": 16,
+        "depth": 3
+      }
+    },
+    {
+      "name": "count_sketch",
+      "params": {
+        "width": 16,
+        "depth": 3
+      }
+    },
+    {
+      "name": "integrated_sspm",
+      "params": {
+        "capacity": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "num_rows": 1440,
+  "sources": [
+    "report/tables/equal_logical_space_synthetic/results.jsonl",
+    "report/tables/equal_logical_space_kosarak/results.jsonl"
+  ]
+}

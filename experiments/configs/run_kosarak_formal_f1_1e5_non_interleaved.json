@@ -1,0 +1,40 @@
+{
+  "seed": 20260419,
+  "dataset_root": "data/generated_kosarak_formal",
+  "heavy_k": 100,
+  "sample_k": 100,
+  "algorithms": [
+    {
+      "name": "double_mg",
+      "params": {
+        "epsilon": 0.01
+      }
+    },
+    {
+      "name": "double_ss",
+      "params": {
+        "epsilon": 0.01
+      }
+    },
+    {
+      "name": "count_min",
+      "params": {
+        "epsilon": 0.01,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "count_sketch",
+      "params": {
+        "epsilon": 0.01,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "integrated_sspm",
+      "params": {
+        "epsilon": 0.01
+      }
+    }
+  ]
+}

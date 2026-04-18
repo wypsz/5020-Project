@@ -1,0 +1,7 @@
+{
+  "num_rows": 360,
+  "sources": [
+    "report/tables/project_required_expanded_synthetic/results.jsonl",
+    "report/tables/project_required_expanded_kosarak/results.jsonl"
+  ]
+}

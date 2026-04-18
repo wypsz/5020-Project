@@ -1,0 +1,7 @@
+{
+  "num_rows": 1080,
+  "sources": [
+    "report/tables/epsilon_sweep_synthetic/results.jsonl",
+    "report/tables/epsilon_sweep_kosarak/results.jsonl"
+  ]
+}

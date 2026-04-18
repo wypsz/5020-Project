@@ -1,0 +1,184 @@
+{
+  "seed": 20260419,
+  "dataset_root": "data/generated_project_required_kosarak",
+  "heavy_k": 100,
+  "sample_k": 100,
+  "algorithms": [
+    {
+      "name": "double_mg",
+      "label": "double_mg__L_300",
+      "params": {
+        "capacity": 150,
+        "target_logical_size": 300
+      }
+    },
+    {
+      "name": "double_ss",
+      "label": "double_ss__L_300",
+      "params": {
+        "capacity": 150,
+        "target_logical_size": 300
+      }
+    },
+    {
+      "name": "count_min",
+      "label": "count_min__L_300",
+      "params": {
+        "width": 60,
+        "depth": 5,
+        "delta": 0.01,
+        "target_logical_size": 300
+      }
+    },
+    {
+      "name": "count_sketch",
+      "label": "count_sketch__L_300",
+      "params": {
+        "width": 60,
+        "depth": 5,
+        "delta": 0.01,
+        "target_logical_size": 300
+      }
+    },
+    {
+      "name": "integrated_sspm",
+      "label": "integrated_sspm__L_300",
+      "params": {
+        "capacity": 300,
+        "target_logical_size": 300
+      }
+    },
+    {
+      "name": "double_mg",
+      "label": "double_mg__L_600",
+      "params": {
+        "capacity": 300,
+        "target_logical_size": 600
+      }
+    },
+    {
+      "name": "double_ss",
+      "label": "double_ss__L_600",
+      "params": {
+        "capacity": 300,
+        "target_logical_size": 600
+      }
+    },
+    {
+      "name": "count_min",
+      "label": "count_min__L_600",
+      "params": {
+        "width": 120,
+        "depth": 5,
+        "delta": 0.01,
+        "target_logical_size": 600
+      }
+    },
+    {
+      "name": "count_sketch",
+      "label": "count_sketch__L_600",
+      "params": {
+        "width": 120,
+        "depth": 5,
+        "delta": 0.01,
+        "target_logical_size": 600
+      }
+    },
+    {
+      "name": "integrated_sspm",
+      "label": "integrated_sspm__L_600",
+      "params": {
+        "capacity": 600,
+        "target_logical_size": 600
+      }
+    },
+    {
+      "name": "double_mg",
+      "label": "double_mg__L_1200",
+      "params": {
+        "capacity": 600,
+        "target_logical_size": 1200
+      }
+    },
+    {
+      "name": "double_ss",
+      "label": "double_ss__L_1200",
+      "params": {
+        "capacity": 600,
+        "target_logical_size": 1200
+      }
+    },
+    {
+      "name": "count_min",
+      "label": "count_min__L_1200",
+      "params": {
+        "width": 240,
+        "depth": 5,
+        "delta": 0.01,
+        "target_logical_size": 1200
+      }
+    },
+    {
+      "name": "count_sketch",
+      "label": "count_sketch__L_1200",
+      "params": {
+        "width": 240,
+        "depth": 5,
+        "delta": 0.01,
+        "target_logical_size": 1200
+      }
+    },
+    {
+      "name": "integrated_sspm",
+      "label": "integrated_sspm__L_1200",
+      "params": {
+        "capacity": 1200,
+        "target_logical_size": 1200
+      }
+    },
+    {
+      "name": "double_mg",
+      "label": "double_mg__L_2400",
+      "params": {
+        "capacity": 1200,
+        "target_logical_size": 2400
+      }
+    },
+    {
+      "name": "double_ss",
+      "label": "double_ss__L_2400",
+      "params": {
+        "capacity": 1200,
+        "target_logical_size": 2400
+      }
+    },
+    {
+      "name": "count_min",
+      "label": "count_min__L_2400",
+      "params": {
+        "width": 480,
+        "depth": 5,
+        "delta": 0.01,
+        "target_logical_size": 2400
+      }
+    },
+    {
+      "name": "count_sketch",
+      "label": "count_sketch__L_2400",
+      "params": {
+        "width": 480,
+        "depth": 5,
+        "delta": 0.01,
+        "target_logical_size": 2400
+      }
+    },
+    {
+      "name": "integrated_sspm",
+      "label": "integrated_sspm__L_2400",
+      "params": {
+        "capacity": 2400,
+        "target_logical_size": 2400
+      }
+    }
+  ]
+}

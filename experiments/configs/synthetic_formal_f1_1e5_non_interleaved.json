@@ -1,0 +1,61 @@
+{
+  "seed": 20260419,
+  "heavy_k": 100,
+  "sample_k": 100,
+  "algorithms": [
+    {
+      "name": "double_mg",
+      "params": {
+        "epsilon": 0.01
+      }
+    },
+    {
+      "name": "double_ss",
+      "params": {
+        "epsilon": 0.01
+      }
+    },
+    {
+      "name": "count_min",
+      "params": {
+        "epsilon": 0.01,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "count_sketch",
+      "params": {
+        "epsilon": 0.01,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "integrated_sspm",
+      "params": {
+        "epsilon": 0.01
+      }
+    }
+  ],
+  "grid": {
+    "domain_size": 100000,
+    "final_f1_values": [
+      100000
+    ],
+    "alpha_values": [
+      1.5,
+      2,
+      4,
+      8
+    ],
+    "stream_modes": [
+      "non-interleaved"
+    ],
+    "zipf_s_values": [
+      1.2
+    ],
+    "binomial": {
+      "n": 99999,
+      "p": 0.5
+    }
+  }
+}

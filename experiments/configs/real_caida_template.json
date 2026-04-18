@@ -1,0 +1,48 @@
+{
+  "name": "caida_template_run",
+  "source_path": "data/raw/caida_destination_ip.tsv.gz",
+  "final_f1": 50000,
+  "alpha": 2,
+  "mode": "interleaved",
+  "seed": 20260419,
+  "destination_column": "destination_ip",
+  "destination_index": null,
+  "delimiter": "\t",
+  "has_header": true,
+  "heavy_k": 100,
+  "sample_k": 100,
+  "algorithms": [
+    {
+      "name": "double_mg",
+      "params": {
+        "epsilon": 0.01
+      }
+    },
+    {
+      "name": "double_ss",
+      "params": {
+        "epsilon": 0.01
+      }
+    },
+    {
+      "name": "count_min",
+      "params": {
+        "epsilon": 0.01,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "count_sketch",
+      "params": {
+        "epsilon": 0.01,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "integrated_sspm",
+      "params": {
+        "epsilon": 0.01
+      }
+    }
+  ]
+}

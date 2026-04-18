@@ -1,0 +1,57 @@
+{
+  "seed": 20260419,
+  "dataset_root": "data/generated_kosarak",
+  "heavy_k": 100,
+  "sample_k": 100,
+  "filters": {
+    "family": [
+      "kosarak"
+    ],
+    "final_f1_star": [
+      100000
+    ],
+    "alpha": [
+      1.5,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "stream_mode": [
+      "non-interleaved"
+    ]
+  },
+  "algorithms": [
+    {
+      "name": "double_mg",
+      "params": {
+        "epsilon": 0.01
+      }
+    },
+    {
+      "name": "double_ss",
+      "params": {
+        "epsilon": 0.01
+      }
+    },
+    {
+      "name": "count_min",
+      "params": {
+        "epsilon": 0.01,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "count_sketch",
+      "params": {
+        "epsilon": 0.01,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "integrated_sspm",
+      "params": {
+        "epsilon": 0.01
+      }
+    }
+  ]
+}

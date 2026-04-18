@@ -1,0 +1,119 @@
+{
+  "seed": 20260419,
+  "dataset_root": "data/generated_project_required_kosarak",
+  "heavy_k": 100,
+  "sample_k": 100,
+  "algorithms": [
+    {
+      "name": "double_mg",
+      "label": "double_mg__eps_0p01",
+      "params": {
+        "epsilon": 0.01
+      }
+    },
+    {
+      "name": "double_mg",
+      "label": "double_mg__eps_0p05",
+      "params": {
+        "epsilon": 0.05
+      }
+    },
+    {
+      "name": "double_mg",
+      "label": "double_mg__eps_0p10",
+      "params": {
+        "epsilon": 0.1
+      }
+    },
+    {
+      "name": "double_ss",
+      "label": "double_ss__eps_0p01",
+      "params": {
+        "epsilon": 0.01
+      }
+    },
+    {
+      "name": "double_ss",
+      "label": "double_ss__eps_0p05",
+      "params": {
+        "epsilon": 0.05
+      }
+    },
+    {
+      "name": "double_ss",
+      "label": "double_ss__eps_0p10",
+      "params": {
+        "epsilon": 0.1
+      }
+    },
+    {
+      "name": "count_min",
+      "label": "count_min__eps_0p01",
+      "params": {
+        "epsilon": 0.01,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "count_min",
+      "label": "count_min__eps_0p05",
+      "params": {
+        "epsilon": 0.05,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "count_min",
+      "label": "count_min__eps_0p10",
+      "params": {
+        "epsilon": 0.1,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "count_sketch",
+      "label": "count_sketch__eps_0p01",
+      "params": {
+        "epsilon": 0.01,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "count_sketch",
+      "label": "count_sketch__eps_0p05",
+      "params": {
+        "epsilon": 0.05,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "count_sketch",
+      "label": "count_sketch__eps_0p10",
+      "params": {
+        "epsilon": 0.1,
+        "delta": 0.01
+      }
+    },
+    {
+      "name": "integrated_sspm",
+      "label": "integrated_sspm__eps_0p01",
+      "params": {
+        "epsilon": 0.01
+      }
+    },
+    {
+      "name": "integrated_sspm",
+      "label": "integrated_sspm__eps_0p05",
+      "params": {
+        "epsilon": 0.05
+      }
+    },
+    {
+      "name": "integrated_sspm",
+      "label": "integrated_sspm__eps_0p10",
+      "params": {
+        "epsilon": 0.1
+      }
+    }
+  ]
+}

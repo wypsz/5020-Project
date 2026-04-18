@@ -1,0 +1,22 @@
+{
+  "seed": 20260419,
+  "data_home": "data/raw/skmine_data",
+  "grid": {
+    "final_f1_values": [
+      50000,
+      100000,
+      200000,
+      500000
+    ],
+    "alpha_values": [
+      1.5,
+      2,
+      4,
+      8
+    ],
+    "stream_modes": [
+      "non-interleaved",
+      "interleaved"
+    ]
+  }
+}

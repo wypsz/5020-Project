@@ -1,0 +1,37 @@
+# Local environment and caches
+.codex
+.vendor/
+**/__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+
+# Local planning notes
+PROJECT_PLAN.md
+
+# Large generated datasets are not part of the final GitHub submission
+data/
+
+# Keep only the final merged result tables used by the notebook/report
+report/tables/*
+!report/tables/project_required_expanded_merged/
+!report/tables/project_required_expanded_merged/**
+!report/tables/epsilon_sweep_merged/
+!report/tables/epsilon_sweep_merged/**
+!report/tables/equal_logical_space_merged/
+!report/tables/equal_logical_space_merged/**
+
+# Keep only the final figures referenced by the final reports
+report/figures/project_required_expanded/*
+!report/figures/project_required_expanded/alpha_triptych_error_space.png
+!report/figures/project_required_expanded/alpha_triptych_relative_error_space.png
+!report/figures/project_required_expanded/stream_length_triptych_error_space_alpha_4p0.png
+!report/figures/project_required_expanded/stream_length_triptych_relative_error_space_alpha_4p0.png
+!report/figures/project_required_expanded/epsilon_triptych_error_space_alpha_4p0_f1_100000.png
+!report/figures/project_required_expanded/epsilon_triptych_relative_error_space_alpha_4p0_f1_100000.png
+!report/figures/project_required_expanded/equal_space_triptych_error_alpha_4p0_f1_100000.png
+!report/figures/project_required_expanded/equal_space_triptych_relative_error_alpha_4p0_f1_100000.png
+!report/figures/project_required_expanded/equal_space_alpha_triptych_L_1200_f1_100000.png
+!report/figures/project_required_expanded/equal_space_alpha_triptych_relative_error_L_1200_f1_100000.png
+!report/figures/project_required_expanded/equal_space_stream_triptych_L_1200_alpha_4p0.png
+!report/figures/project_required_expanded/equal_space_stream_triptych_relative_error_L_1200_alpha_4p0.png
