@@ -76,6 +76,84 @@ Outputs:
 
 - `report/tables/equal_logical_space_*`
 
+## How to Obtain the Datasets
+
+The project uses:
+
+- `uniform` synthetic streams
+- `zipf` synthetic streams with `s = 1.2`
+- `Kosarak` as the real-world dataset
+
+### 1. Generate the synthetic datasets
+
+The final synthetic datasets are generated from:
+
+- `experiments/configs/synthetic_project_required_expanded.json`
+
+Run:
+
+```bash
+python3 -m experiments.generate_datasets \
+  --synthetic-config experiments/configs/synthetic_project_required_expanded.json \
+  --output-dir data/generated_project_required_synthetic
+```
+
+This materializes the required strict-turnstile streams under the final project setting:
+
+- families: `uniform`, `zipf`
+- `domain_size = 100000`
+- `F1* in {5e4, 1e5, 2e5, 5e5}`
+- `alpha in {1.5, 2, 3, 4, 6, 8}`
+- stream mode: `non-interleaved`
+- Zipf parameter: `s = 1.2`
+
+The generated datasets are written under:
+
+- `data/generated_project_required_synthetic/`
+
+Each dataset directory contains:
+
+- `stream.jsonl`
+- `metadata.json`
+
+### 2. Generate the Kosarak datasets
+
+The final real-world datasets are generated from:
+
+- `experiments/configs/real_kosarak_project_required_expanded.json`
+
+Run:
+
+```bash
+python3 -m experiments.generate_kosarak \
+  --config experiments/configs/real_kosarak_project_required_expanded.json \
+  --output-dir data/generated_project_required_kosarak
+```
+
+The generator will automatically download `kosarak.dat` if it is not already present, and cache it under:
+
+- `data/raw/skmine_data/kosarak.dat`
+
+It then:
+
+- parses the transaction file,
+- expands transactions into item occurrences,
+- takes a prefix long enough for the required insertion budget,
+- constructs strict-turnstile streams using the same non-interleaved random-deletion policy,
+- validates each generated stream.
+
+The generated datasets are written under:
+
+- `data/generated_project_required_kosarak/`
+
+### 3. Generate everything with one command
+
+If you do not want to run the two generators separately, the main baseline pipeline will generate both synthetic and Kosarak datasets automatically before running the experiments:
+
+```bash
+bash scripts/run_project_required_expanded.sh
+```
+
 ## How to Plot the Results
 
 Open:
